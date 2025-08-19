@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Page Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+      padding: 20px;
+    }
+
+    section {
+      flex: 1;
+      padding: 20px;
+      background: #f4f4f4;
+      margin-right: 0px;
+    }
+
+    aside {
+      flex: 1;
+      padding: 20px;
+      background: #ddd;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content with section + aside -->
+  <main>
+    <section>
+      <h2>Welcome to My Website</h2>
+      <p>This is the main content area. You can write articles, blog posts, or anything else here.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in tortor a libero tincidunt ultricies.</p>
+    </section>
+
+    <aside>
+      <h2>Sidebar</h2>
+      <p>This is extra information like ads, links, or related content.</p>
+      <ul>
+        <li><a href="#">Quick Link 1</a></li>
+        <li><a href="#">Quick Link 2</a></li>
+        <li><a href="#">Quick Link 3</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
