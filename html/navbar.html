@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full HTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #333;
+      padding: 10px 20px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #575757;
+    }
+    nav ul li a.active {
+      background-color: #04AA6D;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px;
+      background: lightblue;
+    }
+
+    /* Main content */
+    main {
+      display: flex;
+      padding: 20px;
+    }
+    section {
+      flex: 3;
+      padding: 20px;
+      background: #f4f4f4;
+      margin-right: 20px;
+    }
+    aside {
+      flex: 1;
+      padding: 20px;
+      background: #ddd;
+    }
+
+    /* Images */
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+      section {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>Learn HTML, CSS, and more with examples!</p>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Section with articles -->
+    <section>
+      <article>
+        <h2>Beautiful Nature</h2>
+        <img src="https://via.placeholder.com/400x200" alt="Nature Image 1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut elit nec arcu gravida malesuada.</p>
+      </article>
+
+      <article>
+        <h2>City Life</h2>
+        <img src="https://via.placeholder.com/400x200" alt="City Image 2">
+        <p>Curabitur euismod libero ac velit ullamcorper, id gravida leo vestibulum. Duis et felis nec tortor.</p>
+      </article>
+
+      <article>
+        <h2>Travel Adventures</h2>
+        <img src="https://via.placeholder.com/400x200" alt="Travel Image 3">
+        <p>Phasellus nec tortor at arcu tincidunt finibus. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+      </article>
+    </section>
+
+    <!-- Aside sidebar -->
+    <aside>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+
+      <h3>Advertisement</h3>
+      <img src="https://via.placeholder.com/150x150" alt="Ad Image">
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
